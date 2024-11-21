@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.logo h5 {
+    font-size: 25px;
+    color: #6C63FF;
+    font-weight: 600;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.nav-list li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-list a {
+    color: #000;
+    text-decoration: none;
+}
+.btn {
+    display: flex;
+    gap: 40px;
+}
+.btn-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.btn-list a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+.nav-btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #6C63FF;
+    border: 1.5px solid #B7B3B3;
+}
+.header-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.line {
+    width: 52px;
+    height: 3px;
+    border: 3px solid #B7B3B3;
+}
+.header-title h1 {
+    font-size: 44px;
+    font-weight: 600;
+}
+.header-title p {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 60%;
+    line-height: 24.38px;
+}
+.header-btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6C63FF;
+    border: 1.5px solid #353434;
+}
+.bg-none {
+    background-color: #fff;
+    color: #000;
+}
+.button-list {
+    display: flex;
+    gap: 25px;
+}
+@media screen and (max-width: 578px) {
+    .header-title {
+        width: 100%;
+    }
+    .header-title p {
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .btn-list {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    .header-content {
+        flex-direction: column-reverse;
+    }
+    .header-content img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* How it Works Bölümü */
+.how-it-works {
+    padding: 50px 20px;
+}
+.how-it-works h2 {
+    font-size: 2rem; /* Başlık boyutu */
+    text-align: center; /* Başlığı ortala */
+    font-weight: bold; /* Başlık kalınlığı */
+    color: #333; /* Başlık rengi */
+    margin-bottom: 20px; /* Altındaki boşluk */
+    position: relative; /* Çizgi için gerekli */
+}
+.how-it-works h2::after {
+    content: ""; /* Çizgiyi eklemek için */
+    display: block;
+    width: 40px; /* Çizgi genişliği */
+    height: 2px; /* Çizgi kalınlığı */
+    background-color: #ccc; /* Çizgi rengi */
+    margin: 10px auto 0; /* Çizgiyi ortala ve başlıkla arasını aç */
+}
+
+.how-it-works p {
+    font-family: 'Roboto', 'Arial', sans-serif; /* Yazı tipi ailesi */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: 500; /* Normal yazı kalınlığı */
+    color: #666; /* Yazı rengi */
+    text-align: center; /* Yazıyı ortala */
+    line-height: 1.2; /* Satır arası boşluk */
+    margin: 0 auto; /* Yazıyı hizala */
+    max-width: 400px; /* Genişlik sınırı */
+}
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.step {
+    text-align: center;
+    max-width: 200px;
+}
+.step h3 {
+    font-size: 1.2rem; /* Başlığın boyutu */
+    font-weight: bold; /* Kalınlık */
+    text-align: center; /* Ortalama */
+    margin: 10px 0; /* Üst ve alt boşluk */
+    max-width: 150px; /* Genişliği sınırla */
+    line-height: 1.4; /* Satır yüksekliği */
+    word-wrap: break-word; /* Uzun kelimeleri kır */
+    margin-left: auto; /* Ortala */
+    margin-right: auto; /* Ortala */
+}
+.step p {
+    font-size: 10px; /* Alt yazının boyutu */
+    color: #666; /* Yazı rengi */
+    text-align: center; /* Ortala */
+    line-height: 1.2; /* Satır arası boşluk */
+    max-width: 200px; /* Yazının genişliğini sınırla */
+    margin: 0 auto; /* Ortala */
+}
+
+.step img {
+    width: 120px; /* Görsellerin boyutu */
+    height: 120px;
+    border-radius: 50%; /* Daire şeklinde görünmesi için */
+    object-fit: cover; /* Görselin taşma yapmadan doğru oturmasını sağlar */
+    margin-bottom: 10px;
+}
+
+/* Real-Time Currency Balance Bölümü */
+.real-time-balance {
+    display: flex; /* Görsel ve metni yatayda hizalamak için */
+    align-items: center; /* Görsel ve metni dikey olarak ortala */
+    justify-content: flex-start; /* İçeriği sola hizala */
+    gap: 30px; /* Görsel ve yazılar arasındaki boşluk (orta seviyede) */
+    padding: 50px 20px; /* İçerik etrafında genel boşluk */
+}
+.real-time-balance h2 {
+    font-size: 1.8rem; /* Başlık boyutu */
+    font-weight: bold; /* Başlık kalınlığı */
+    color: #000; /* Başlık rengi */
+    margin-bottom: 10px; /* Altındaki boşluk */
+    line-height: 1.4; /* Satır arası boşluk */
+    max-width: 300px; /* İki satır olacak şekilde genişlik sınırla */
+    text-align: left; /* Sola hizala */
+}
+.real-time-balance h2::after {
+    content: ""; /* Alt çizgi */
+    display: block;
+    width: 40px; /* Çizgi genişliği */
+    height: 2px; /* Çizgi yüksekliği */
+    background-color: #ccc; /* Çizgi rengi */
+    margin-top: 8px; /* Başlıkla çizgi arası boşluk */
+}
+.real-time-balance p {
+    font-size: 1rem; /* Paragraf boyutu */
+    color: #666; /* Paragraf rengi */
+    line-height: 1.6; /* Satır arası boşluk */
+    margin-bottom: 15px; /* Altındaki boşluk */
+    max-width: 300px; /* İki satır olacak şekilde genişlik sınırla */
+    text-align: left; /* Sola hizala */
+}
+
+.real-time-balance {
+    display: flex; /* İçerikleri yatay hizalamak için */
+    align-items: center; /* Görsel ve metni dikey olarak ortala */
+    justify-content: center; /* İçerikleri yatay olarak ortala */
+    gap: 41px; /* Görsel ve metin arasındaki boşluk */
+    padding: 50px 20px; /* Genel boşluk */
+}
+
+.real-time-balance .content {
+    margin-left: auto; /* Yazıları sağa hizala */
+    text-align: left; /* Yazıları sola hizala */
+    max-width: 500px; /* Yazı bloğunun genişliğini sınırla */
+}
+
+.real-time-balance img {
+    max-width: 300px; /* Görsel genişliğini sınırla */
+    height: auto; /* Görselin oranlarını koru */
+    flex-shrink: 0; /* Görselin küçülmesini engelle */
+}
+
+
+.real-time-balance .content {
+    margin-left: 80px; /* Yazılar için küçük bir sola kayma */
+    max-width: 500px; /* Metin bloğunun genişliğini sınırla */
+    text-align: left; /* Yazıları sola hizala */
+}
+.real-time-balance div {
+    max-width: 500px;
+}
+
+.real-time-balance a {
+    font-size: 1rem; /* Link yazı boyutu */
+    color: #5b34ef; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    font-weight: bold; /* Kalın yazı */
+}
+.real-time-balance a:hover {
+    text-decoration: underline; /* Hover durumunda alt çizgi */
+}
+/* Services Bölümü */
+.services {
+    text-align: center;
+    padding: 50px 20px; /* Üst ve yanlardan boşluk */
+}
+.logo {
+    display: inline-flex; /* Logo ve "Sendpay" yazısını yan yana hizala */
+    align-items: center; /* Dikeyde ortala */
+    gap: 5px; /* Logo ve "Sendpay" yazısı arasındaki boşluk */
+}
+.logo-img {
+    width: 25px; /* Logo boyutu */
+    height: auto; /* Oranları koru */
+}
+.sendpay {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5b34ef !important; /* Rengi zorunlu olarak uygula */
+}
+
+.services h2 {
+    font-size: 2rem; /* Başlık boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: #333; /* Başlık rengi */
+    text-align: center; /* Ortala */
+    display: inline-block; /* Çizgi ile başlık ilişkisini düzenlemek için */
+    position: relative; /* Çizgiyi konumlandırma için ayar */
+    margin-bottom: 10px; /* Çizgi ile metin arasındaki boşluk */
+}
+
+.services h2::after {
+    content: ""; /* Çizgi oluşturmak için boş içerik */
+    display: block;
+    width: 40px; /* Çizginin genişliği */
+    height: 3px; /* Çizginin kalınlığı */
+    background-color: #ccc; /* Çizgi rengi */
+    margin: 10px auto 0; /* Çizgiyi başlık altına hizala */
+    transform: translateX(-20px); /* Çizgiyi sola kaydır */
+}
+.services h2 .sendpay {
+    color: #888; /* Hafif gri */
+    margin-left: 5px;
+}
+.services p {
+    font-size: 1rem;
+    color: #aaa; /* Açıklama yazısı rengi */
+    margin-bottom: 40px;
+}
+.services .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Logo ve yazı arasındaki boşluk */
+}
+.services .logo-img {
+    width: 30px; /* Logo boyutu */
+    height: auto;
+}
+.services h2 .logo {
+    font-weight: bold;
+    color: #5b34ef; /* Mor ton */
+    display: inline-flex;
+    align-items: center;
+}
+
+.service-list {
+    display: grid; /* Grid düzeni */
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 sütunlu grid */
+    gap: 40px; /* Kartlar arasındaki boşluk */
+    justify-content: center; /* Grid'i yatayda merkeze al */
+    align-content: center; /* Grid'in içeriklerini dikeyde ortala */
+    padding: 20px; /* Grid etrafındaki boşluk */
+    margin: 0 auto; /* Grid'i tam ortala */
+    max-width: 900px; /* Grid'in maksimum genişliği */
+    height: 100%; /* Tüm içeriği dikeyde ortalamak için gerekli */
+}
+
+.service {
+    display: flex; /* Kart içeriğini yatay hizala */
+    align-items: center; /* Dikey ortalama */
+    gap: 15px; /* Görsel ile metin arasındaki boşluk */
+    padding: 15px; /* Kart içi boşluk */
+    border: none; /* Çerçeve kaldırıldı */
+    max-width: 400px; /* Kartın maksimum genişliği */
+    background-color: transparent; /* Arka plan yok */
+}
+.service:hover {
+    border-color: #5b34ef; /* Hover durumunda çerçeve mor olur */
+}
+.service img {
+    width: 55px; /* Simge genişliği */
+    height: auto; /* Oranları koru */
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column; /* Metni dikey hizala */
+}
+.service-content h3 {
+    font-size: 1.2rem; /* Başlık boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: #333; /* Başlık rengi */
+    margin-bottom: 5px; /* Başlık alt boşluk */
+    text-align: left; /* Metni sola hizala */
+}
+
+.service-content p {
+    font-size: 15px; /* Yazı boyutunu küçült */
+    color: #aaa; /* Yazı rengini açık gri yap */
+    line-height: 1.4; /* Satır arası boşluğu düzenle */
+    text-align: left; /* Yazıyı sola hizala */
+    margin: 0; /* Ekstra boşluk bırakma */
+}
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: 1fr; /* Tek sütun */
+    }
+}
+
+
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.testimonials {
+    background: #6c63ff;
+    padding: 40px 20px;
+    text-align: center;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    margin:  auto 20px;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: -50px; 
+    left: 10px;
+    margin: 10px;
+}
+.section-header h2 {
+    text-align: start;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;}
+.section-header .see-all {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: start;
+}
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    padding: 20px;
+    text-align: left;
+}
+.card {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+.card p{
+    font-weight: 100;
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    object-fit: cover;
+}
+.user h4 {
+    margin: 0;
+    color: #333;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+.footer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.letter-e {
+    display: inline-block;
+    background-color: #5b45ef;
+    color: white;
+    padding: 5px 10px; 
+    border-radius: 3px; 
+    font-weight: bold;
+}
+.letterr-e {
+    color: rgba(169, 169, 169, 0.6);
+}
+.footer-left h3 {
+    color: #5b45ef;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.footer-left p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+.footer-center {
+    display: flex;
+    gap: 30px;
+    flex: 2;
+    margin-left: 300px;
+}
+.footer-center h4 {
+    color: rgba(169, 169, 169, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 30px;
+}
+.footer-center li {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+.footer-right h4 {
+    font-size: 20px;
+    margin-bottom: 15%;
+    color: #333;
+    margin-top: 120px;
+}
+.social-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #6c63ff;
+    padding: 15px;
+    border-radius: 20px;
+    width: 160px;
+    margin: 0 auto;
+}
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 578px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-center {
+        margin-left: 0;
+    }
+    .footer-center h4 {
+        margin-top: 50px;
+    }
+    .footer-right h4 {
+        margin-top: 50px;
+    }
+    .section-header {
+        position: relative;
+        max-width: 75%;
+    }
+    .real-time-balance {
+        flex-direction: column;
+    }
+}
