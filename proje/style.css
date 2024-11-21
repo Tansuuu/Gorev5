@@ -165,6 +165,7 @@ p {
 
 /* How it Works Bölümü */
 .how-it-works {
+    margin-top: 50px;
     padding: 50px 20px;
 }
 .how-it-works h2 {
